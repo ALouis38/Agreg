@@ -29,7 +29,7 @@ import org.xml.sax.SAXException;
 
 @Component(name = "DataFinderRSSComponent")
 @Provides(specifications = SearchInfoItf.class)
-@Instantiate(name = "DataFinderTwitterComponentInstance")
+@Instantiate(name = "DataFinderRSSComponentInstance")
 public class DataFinder implements SearchInfoItf{
 
 	@Requires(optional = false, id = "logger")
@@ -41,13 +41,13 @@ public class DataFinder implements SearchInfoItf{
 		String[] listeMotsCles = searchquery.split(" ");
 		HashMap<URL, String> res = new HashMap<URL, String>();
 		
-		System.out.println("début recherche...");
+//		System.out.println("début recherche...");
 		try {
 			//parser le XML en objet
 			URL url = new URL("file:///home/a/amorel/m1info/tagl/axfKhsqe");
 			builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = builder.parse(url.openStream());
-			System.out.println("parse doc...");
+//			System.out.println("parse doc...");
 			
 			NodeList nodesTitle;
 			NodeList nodesDescription;
@@ -61,7 +61,7 @@ public class DataFinder implements SearchInfoItf{
 			
 			//On récupère tous les noeuds "link" du flux
 			nodesLink = doc.getElementsByTagName("link");
-			System.out.println("recherche..");
+//			System.out.println("recherche..");
 			for (int i = 0; i < nodesTitle.getLength(); i++) {
 				Node n = nodesTitle.item(i);
 				String contenu = n.getFirstChild().getTextContent();
@@ -75,7 +75,7 @@ public class DataFinder implements SearchInfoItf{
 						URL link = new URL(parsedLink);
 						res.put(link, "Titre : "+contenu+"\nDescription : "+contenu2);
 						
-						System.out.println("URL = "+link+"String = "+res.get(link));
+//						System.out.println("URL = "+link+"String = "+res.get(link));
 					}
 				}
 				
