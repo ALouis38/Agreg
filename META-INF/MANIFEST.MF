@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1430732915028
+Bnd-LastModified: 1430734107610
 Build-Jdk: 1.7.0_55
 Built-By: amorel
 Bundle-Description: parent pom for building wiperdog artifacts.

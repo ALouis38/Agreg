@@ -14,7 +14,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.news</groupId>
-  <artifactId>Agreg</artifactId>
+  <artifactId>RssFinder</artifactId>
   <version>1.0</version>
 
   <name>${bundle.symbolicName}</name>
