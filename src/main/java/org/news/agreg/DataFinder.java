@@ -44,7 +44,7 @@ public class DataFinder implements SearchInfoItf{
 //		System.out.println("début recherche...");
 		try {
 			//parser le XML en objet
-			URL url = new URL("file:///home/a/amorel/m1info/tagl/axfKhsqe");
+			URL url = new URL("file:///home/a/amorel/m1info/tagl/monProjetFinal/Agreg/index.rss");
 			builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = builder.parse(url.openStream());
 //			System.out.println("parse doc...");
@@ -62,11 +62,11 @@ public class DataFinder implements SearchInfoItf{
 			//On récupère tous les noeuds "link" du flux
 			nodesLink = doc.getElementsByTagName("link");
 //			System.out.println("recherche..");
-			for (int i = 0; i < nodesTitle.getLength(); i++) {
+			for (int i = 1; i < nodesTitle.getLength(); i++) {
 				Node n = nodesTitle.item(i);
 				String contenu = n.getFirstChild().getTextContent();
 				
-				Node n2 = nodesDescription.item(i);
+				Node n2 = nodesDescription.item(i-1);
 				String contenu2 = n2.getFirstChild().getTextContent();
 				
 				for (int j = 0; j < listeMotsCles.length; j++) {

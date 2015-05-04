@@ -1,12 +1,12 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1430728341647
+Bnd-LastModified: 1430732915028
 Build-Jdk: 1.7.0_55
 Built-By: amorel
 Bundle-Description: parent pom for building wiperdog artifacts.
 Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
 Bundle-ManifestVersion: 2
-Bundle-Name: Agreg
-Bundle-SymbolicName: Agreg
+Bundle-Name: RssFinder
+Bundle-SymbolicName: RssFinder
 Bundle-Version: 1.0
 Created-By: Apache Maven Bundle Plugin
 Export-Package: org.news.agreg;version="1.0"

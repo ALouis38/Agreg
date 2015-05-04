@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <properties>
-    <bundle.symbolicName>Agreg</bundle.symbolicName>
+    <bundle.symbolicName>RssFinder</bundle.symbolicName>
     <bundle.namespace>org.news.agreg</bundle.namespace>
   </properties>
   <parent>
