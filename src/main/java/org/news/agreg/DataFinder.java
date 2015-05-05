@@ -44,7 +44,7 @@ public class DataFinder implements SearchInfoItf{
 //		System.out.println("début recherche...");
 		try {
 			//parser le XML en objet
-			URL url = new URL("file:///home/a/amorel/m1info/tagl/monProjetFinal/Agreg/index.rss");
+			URL url = new URL("http://rss.lemonde.fr/c/205/f/3050/index.rss");
 			builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 			Document doc = builder.parse(url.openStream());
 //			System.out.println("parse doc...");
